@@ -4,8 +4,8 @@ To pass an encrypted message from one person to another, it is first necessary t
 
 ## Caesar cipher function in MATLAB
 The caesar function accepts two arguments:
-* the first is the character vector to be encrypted and
-* the second is the shift amount.</br>
+  * the first is the character vector to be encrypted and
+  * the second is the shift amount.</br>
 The function works with characters with ASCII codes from 32 to 126. If the shifted code goes outside of this range, it should wrap around.</br></br>
 
 Here is a quick example of the encryption and decryption steps involved with the caesar cipher. The text we will encrypt is 'THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG', with a shift amount of 23.
@@ -15,7 +15,7 @@ Here is a quick example of the encryption and decryption steps involved with the
   code = caesar('THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG', 23);
   uncode = caesar(code, -23);
 ```
-</br>
+
 Output: </br>
 
 ```
@@ -24,4 +24,4 @@ Output: </br>
   uncode =
     'THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG'
 ```
-</br>
+
